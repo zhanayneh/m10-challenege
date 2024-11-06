@@ -109,7 +109,6 @@ footer a {
     margin: 0 5px; /* Reduced margin for mobile */
 }
 
-/* Main Content Layout */
 main .content {
     display: flex;
     flex-direction: column;
