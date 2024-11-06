@@ -1,0 +1,184 @@
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #59331D;
+    color: #131D26;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #D98555;
+    color: #FFDAB9; /* Adjusted "peach" color */
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    height: 200px; /* Keep the image a reasonable size */
+    width: auto;
+    vertical-align: middle;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: x-large;
+    margin: 0 20px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: x-large;
+    text-align: center;
+    color: #59331D;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #D98555;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #C87449;
+}
+
+/* Image Styling */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.responsive-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-caption {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Main Content Layout */
+main .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-1, .section-2, .section-3 {
+    flex: 1;
+}
+
+/* Navigation Links */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    flex: 1 1 45%;
+    margin: 0.5rem;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    main .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .section-1 {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    main .content {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .section-1 {
+        grid-column: 1 / span 3;
+    }
+    .section-2 {
+        grid-column: 1 / span 2;
+    }
+    .section-3 {
+        grid-column: 2 / span 1;
+    }
+}
+
+/* Product Section Styling */
+@media (min-width: 768px) {
+    .product {
+        padding: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .product {
+        max-width: 1000px;
+    }
+}
