@@ -75,7 +75,7 @@ h1 {
     background-color: #C87449;
 }
 
-/* Image Styling */
+
 .image-container {
     display: flex;
     justify-content: center;
@@ -180,7 +180,7 @@ nav {
     }
 }
 
-/* Product Section Styling */
+
 @media (min-width: 768px) {
     .product {
         padding: 30px;
