@@ -6,36 +6,50 @@
   <title>Home - Gulp Roast</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Lato:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Button</title>
-    <style>
-        /* Button Styling */
-        .btn {
-            display: inline-block;
-            padding: 8px 20px;
-            background-color: #D98555;
-            color: white;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: 700;
-            cursor: pointer;
-            border-radius: 8px;
-            margin: 10px;
-            transition: background-color 0.3s ease;
-            font-size: small;
-        }
+  <style>
+      /* Button Styling */
+      .btn {
+          display: inline-block;
+          padding: 12px 25px;
+          background-color: #D98555;
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: 700;
+          cursor: pointer;
+          border-radius: 8px;
+          transition: background-color 0.3s ease;
+          font-size: 16px;
+      }
 
-        /* Flexbox Centering */
-        .button-container {
-            display: flex;
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically (if needed) */
-            height: 100vh; /* Makes the container take full screen height */
-        }
-    </style>
-</head>
+      .btn:hover {
+          background-color: #b86a42;
+      }
+
+      /* Flexbox Centering */
+      .content-container {
+          display: flex;
+          flex-direction: column; /* Stack text and button vertically */
+          justify-content: center; /* Center vertically */
+          align-items: center; /* Center horizontally */
+          text-align: center; /* Center text */
+          min-height: 80vh; /* Adjust to ensure content is centered */
+          padding: 20px;
+      }
+
+      /* Responsive Image Styling */
+      .image-container {
+          text-align: center; /* Center the image */
+          margin-top: 20px;
+      }
+
+      .responsive-image {
+          width: 80%;
+          max-width: 600px; /* Ensures the image doesn't get too big */
+          height: auto;
+          border-radius: 10px;
+      }
+  </style>
 </head>
 <body>
   
@@ -47,23 +61,23 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="products.html">Products</a>
-      <a href="contact.html"> Contact Us </a>
+      <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
-  <section>
+  <!-- Centered Content Section -->
+  <section class="content-container">
     <h1>Welcome to Gulp Roast</h1>
     <p>There's nothing quite like enjoying that perfect cup of coffee.</p>
     <p>Our coffee brightens your days—one sip at a time. Join us at our cafe, or order our beans online. Either way, you're bound to improve your day!</p>
-
+    
     <a href="products.html" class="btn">View our coffee</a> 
   </section>
 
+  <!-- Centered Image Section -->
   <section class="image-container">
-    <section class="section-2">
-    <img src="img/drive-download-20241026T032610Z-001/gulp-drinking-coffee.jpg" alt="sipping some amazing glup roast" class="responsive-image">
-    </section>
-    </section>
+    <img src="img/drive-download-20241026T032610Z-001/gulp-drinking-coffee.jpg" alt="Sipping some amazing Gulp Roast" class="responsive-image">
+  </section>
 
   <footer>
     <p>2024 Gulp Roast Coffee. All rights reserved.</p>
