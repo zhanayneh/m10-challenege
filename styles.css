@@ -57,19 +57,18 @@ h1 {
 }
 
 .btn {
-    display: inline-block;
-    padding: 8px 20px;
-    background-color: #D98555;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    cursor: pointer;
-    border-radius: 8px;
-    margin: 10px 10px;
-    transition: background-color 0.3s ease;
-    font-size: small; /* Reduced font size for mobile */
-}
+          display: inline-block;
+          padding: 10px 10px;
+          background-color: #D98555;
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: 700;
+          cursor: pointer;
+          border-radius: 8px;
+          transition: background-color 0.3s ease;
+          font-size: 20px;
+      }
 
 .btn:hover {
     background-color: #C87449;
