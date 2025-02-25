@@ -18,7 +18,7 @@ header, footer {
 }
 
 header img {
-    height: 150px; /* Reduced size for better mobile layout */
+    height: 150px;
     width: auto;
     vertical-align: middle;
 }
@@ -27,8 +27,8 @@ header a {
     color: white;
     text-decoration: none;
     font-weight: 800;
-    font-size: large; /* Smaller font on mobile */
-    margin: 0 10px; /* Reduced margin for mobile */
+    font-size: large;
+    margin: 0 10px;
 }
 
 main {
@@ -36,7 +36,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px; /* Less padding on mobile */
+    padding: 10px;
 }
 
 section {
@@ -46,6 +46,10 @@ section {
     max-width: 800px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center content inside section */
+    justify-content: center;  /* Optional for vertical centering */
 }
 
 h1 {
@@ -57,23 +61,22 @@ h1 {
 }
 
 .btn {
-          display: inline-block;
-          padding: 10px 10px;
-          background-color: #D98555;
-          color: white;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-weight: 700;
-          cursor: pointer;
-          border-radius: 8px;
-          transition: background-color 0.3s ease;
-          font-size: 20px;
-      }
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #D98555;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
 
 .btn:hover {
     background-color: #C87449;
 }
-
 
 .image-container {
     display: flex;
@@ -97,7 +100,6 @@ h1 {
     margin-top: 10px;
 }
 
-
 footer {
     padding: 10px;
 }
@@ -105,7 +107,7 @@ footer {
 footer a {
     color: white;
     text-decoration: none;
-    margin: 0 5px; /* Reduced margin for mobile */
+    margin: 0 5px;
 }
 
 main .content {
@@ -121,11 +123,10 @@ main .content {
     flex: 1;
 }
 
-
 nav {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Adjusted for mobile */
+    gap: 10px;
 }
 
 .nav-links {
@@ -135,11 +136,10 @@ nav {
 }
 
 .nav-links a {
-    flex: 1 1 100%; /* Stacked links for mobile */
+    flex: 1 1 100%;
     margin: 0.5rem 0;
     text-align: center;
 }
-
 
 @media (min-width: 768px) {
     main .content {
@@ -153,7 +153,7 @@ nav {
     }
 
     header img {
-        height: 180px; /* Increased size for tablets and larger */
+        height: 180px;
     }
 
     header a {
@@ -177,7 +177,6 @@ nav {
         grid-column: 2 / span 1;
     }
 }
-
 
 @media (min-width: 768px) {
     .product {
