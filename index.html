@@ -36,19 +36,30 @@
           padding: 25px;
       }
 
-      /* Image Container */
-      .image-container {
-          margin-top: 100px;
-      }
 
-      .responsive-image {
-          width: 80%;
-          max-width: 600px; 
-          height: auto;
-          border-radius: 8px;
-          display: block;
-          margin: 0 auto; /* Ensures centering */
-      }
+    .image-container {
+     margin-top: 50px; /* Reduced margin for better balance */
+     text-align: center; /* Ensures better alignment */
+    }
+
+
+  .responsive-image {
+    width: 80%;
+    max-width: 600px; 
+    height: auto;
+    border-radius: 12px; /* Smoother rounded corners */
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+.responsive-image:hover {
+    transform: scale(1.03); /* Slight enlargement for effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+   }
+    
   </style>
 </head>
 <body>
